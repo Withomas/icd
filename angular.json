@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "icd"
+    }
+  },
+  "defaultProject": "icd",
+  "cli": {
+    "analytics": "45dbb283-6547-4834-97fe-921aacffc848"
+  }
 }
