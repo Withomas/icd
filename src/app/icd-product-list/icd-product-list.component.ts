@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { bindCallback } from 'rxjs';
+
+import { Product } from './../entities/product';
 
 @Component({
   selector: 'app-icd-product-list',
@@ -13,11 +14,25 @@ export class IcdProductListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-}
+  /**
+   * GetProducts
+   */
+  public GetProducts() {
 
-class Products{
-  return Products = [
-    {price: 1159, color: "black", title: "Iphone 11 pro"},
-    {price: 1850, color: "grey", title: "Samsung Fold"}
-  ]
+    return [
+      new Product(1159, 'Black', 'IPhone 11 pro'),
+      new Product(1850, 'Grey', 'Samsung Fold'),
+      new Product(1850, 'Grey', 'Samsung Fold'),
+      new Product(1850, 'Grey', 'Samsung Fold'),
+      new Product(1850, 'Grey', 'Samsung Fold'),
+      new Product(1850, 'Grey', 'Samsung Fold'),
+      new Product(1850, 'Grey', 'Samsung Fold'),
+      new Product(1850, 'Grey', 'Samsung Fold'),
+      new Product(1850, 'Grey', 'Samsung Fold'),
+      new Product(1850, 'Grey', 'Samsung Fold'),
+      new Product(999, 'Grey', 'Samsung Fold'),
+
+    ];
+  }
+
 }

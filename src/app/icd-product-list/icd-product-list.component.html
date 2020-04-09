@@ -1,16 +1,18 @@
 <h1>Liste des produits</h1>
-
-<table>
+<table class="table table-striped" *ngIf="GetProducts().length > 0">
     <thead>
         <tr>
-            <th colspan="2">Tous les produits</th>
+            <th>Price</th>
+            <th>Color</th>
+            <th>Product name</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td *ngFor="let product of Products"> {{product.price}} </td>
-            <td *ngFor="let product of Products"> {{product.color}} </td>
-            <td *ngFor="let product of Products"> {{product.title}} </td>
+        <tr *ngFor="let product of GetProducts()">
+            <td>{{ product.price }}</td>
+            <td>{{ product.color }}</td>
+            <td>{{ product.title }}</td>
         </tr>
     </tbody>
 </table>
+<p *ngIf="GetProducts().length === 0">Aucun produit de disponible</p>
