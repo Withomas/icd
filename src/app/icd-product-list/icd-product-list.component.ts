@@ -22,16 +22,6 @@ export class IcdProductListComponent implements OnInit {
     return [
       new Product(1159, 'Black', 'IPhone 11 pro'),
       new Product(1850, 'Grey', 'Samsung Fold'),
-      new Product(1850, 'Grey', 'Samsung Fold'),
-      new Product(1850, 'Grey', 'Samsung Fold'),
-      new Product(1850, 'Grey', 'Samsung Fold'),
-      new Product(1850, 'Grey', 'Samsung Fold'),
-      new Product(1850, 'Grey', 'Samsung Fold'),
-      new Product(1850, 'Grey', 'Samsung Fold'),
-      new Product(1850, 'Grey', 'Samsung Fold'),
-      new Product(1850, 'Grey', 'Samsung Fold'),
-      new Product(999, 'Grey', 'Samsung Fold'),
-
     ];
   }
 
