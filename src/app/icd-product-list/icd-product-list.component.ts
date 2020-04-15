@@ -14,15 +14,4 @@ export class IcdProductListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  /**
-   * GetProducts
-   */
-  public GetProducts() {
-
-    return [
-      new Product(1159, 'Black', 'IPhone 11 pro'),
-      new Product(1850, 'Grey', 'Samsung Fold'),
-    ];
-  }
-
-}
+  
