@@ -2,13 +2,22 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-2">
-            <select [(ngModel)]="SelectedCategory" (change)="CategoryChanged()">
-                <option *ngFor="let category of Categories" [ngValue]="category">{{category.name}}</option>
-            </select>
+            <div class="form-group">
+                <label for="category">Catégorie</label>
+                <select id="category" class="form-control" [(ngModel)]="SelectedCategory" (change)="CategoryChanged()">
+                    <option *ngFor="let category of Categories" [ngValue]="category">{{category.name}}</option>
+                </select>
+            </div>
 
-            <select [(ngModel)]="SelectedSubCategory" (change)="SubCategoryChanged()">
-                <option *ngFor="let subCategory of SubCategories" [ngValue]="subCategory">{{subCategory.name}}</option>
-            </select>
+            <div class="form-group">
+                <label for="subCategory">Sous-Catégorie</label>
+                <select id="subCategory" class="form-control" [(ngModel)]="SelectedSubCategory"
+                    (change)="SubCategoryChanged()">
+                    <option *ngFor="let subCategory of SubCategories" [ngValue]="subCategory">{{subCategory.name}}
+                    </option>
+                </select>
+            </div>
+
         </div>
 
         <div class="col-md-10">
@@ -16,9 +25,9 @@
             <table class="table table-striped" *ngIf="FilteredProducts.length > 0">
                 <thead>
                     <tr>
-                        <th>Price</th>
-                        <th>Color</th>
-                        <th>Product name</th>
+                        <th>Prix</th>
+                        <th>Couleur</th>
+                        <th>Nom du produit</th>
                     </tr>
                 </thead>
                 <tbody>
