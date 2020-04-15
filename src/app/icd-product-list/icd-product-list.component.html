@@ -1,24 +1,36 @@
 <h1>Liste des produits</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            <select [(ngModel)]="SelectedCategory" (change)="CategoryChanged()">
+                <option *ngFor="let category of Categories" [ngValue]="category">{{category.name}}</option>
+            </select>
 
-<select>
-    <option value="Smartphone" class="container-fluid">Smartphone</option>
-    <option value="TV" class="container-fluid">TV</option>
-</select>
+            <select [(ngModel)]="SelectedSubCategory" (change)="SubCategoryChanged()">
+                <option *ngFor="let subCategory of SubCategories" [ngValue]="subCategory">{{subCategory.name}}</option>
+            </select>
+        </div>
 
-<table class="table table-striped" *ngIf="GetProducts().length > 0">
-    <thead>
-        <tr>
-            <th>Price</th>
-            <th>Color</th>
-            <th>Product name</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let product of GetProducts()">
-            <td>{{ product.price }}</td>
-            <td>{{ product.color }}</td>
-            <td>{{ product.title }}</td>
-        </tr>
-    </tbody>
-</table>
-<p *ngIf="GetProducts().length === 0">Aucun produit de disponible</p>
+        <div class="col-md-10">
+
+            <table class="table table-striped" *ngIf="FilteredProducts.length > 0">
+                <thead>
+                    <tr>
+                        <th>Price</th>
+                        <th>Color</th>
+                        <th>Product name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of FilteredProducts">
+                        <td>{{ product.price }}</td>
+                        <td>{{ product.color }}</td>
+                        <td>{{ product.title }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p *ngIf="FilteredProducts.length === 0">Aucun produit de disponible</p>
+        </div>
+    </div>
+
+</div>
