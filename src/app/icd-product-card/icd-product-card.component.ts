@@ -1,8 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Product } from 'src/app/entities/product';
-import { ProductsData } from 'src/data/products';
-import { CategoriesData } from './../../data/categories';
-import { Category } from 'src/app/entities/category';
+import { Component, OnInit, Input } from '@angular/core';
+import { Product } from '../entities/product';
+
 
 @Component({
   selector: 'app-product-list-design',
@@ -10,6 +8,8 @@ import { Category } from 'src/app/entities/category';
   styleUrls: ['./product-list-design.component.scss']
 })
 export class ProductListDesignComponent implements OnInit {
+
+@Input() Product: Product;
 
   constructor() { }
 

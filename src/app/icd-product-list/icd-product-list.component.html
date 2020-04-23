@@ -22,22 +22,8 @@
 
         <div class="col-md-10">
 
-            <table class="table table-striped" *ngIf="FilteredProducts.length > 0">
-                <thead>
-                    <tr>
-                        <th>Prix</th>
-                        <th>Couleur</th>
-                        <th>Nom du produit</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let product of FilteredProducts">
-                        <td>{{ product.price }}</td>
-                        <td>{{ product.color }}</td>
-                        <td>{{ product.title }}</td>
-                    </tr>
-                </tbody>
-            </table>
+            <p *ngFor="let Product of FilteredProducts"></p>
+
             <p *ngIf="FilteredProducts.length === 0">Aucun produit de disponible</p>
         </div>
     </div>
