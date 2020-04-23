@@ -21,8 +21,10 @@
         </div>
 
         <div class="col-md-10">
-
-            <p *ngFor="let Product of FilteredProducts"></p>
+            
+            <div class="products">
+                <app-icd-product-card *ngFor="let product of FilteredProducts" [Product]="product"></app-icd-product-card>
+            </div>
 
             <p *ngIf="FilteredProducts.length === 0">Aucun produit de disponible</p>
         </div>

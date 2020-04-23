@@ -3,11 +3,11 @@ import { Product } from '../entities/product';
 
 
 @Component({
-  selector: 'app-product-list-design',
-  templateUrl: './product-list-design.component.html',
-  styleUrls: ['./product-list-design.component.scss']
+  selector: 'app-icd-product-card',
+  templateUrl: './icd-product-card.component.html',
+  styleUrls: ['./icd-product-card.component.scss']
 })
-export class ProductListDesignComponent implements OnInit {
+export class IcdProductCardComponent implements OnInit {
 
 @Input() Product: Product;
 

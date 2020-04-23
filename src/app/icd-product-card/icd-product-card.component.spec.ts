@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProductListDesignComponent } from './icd-product-card.component';
+import { IcdProductCardComponent } from './icd-product-card.component';
 
 describe('ProductListDesignComponent', () => {
-  let component: ProductListDesignComponent;
-  let fixture: ComponentFixture<ProductListDesignComponent>;
+  let component: IcdProductCardComponent;
+  let fixture: ComponentFixture<IcdProductCardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProductListDesignComponent ]
+      declarations: [ IcdProductCardComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProductListDesignComponent);
+    fixture = TestBed.createComponent(IcdProductCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
