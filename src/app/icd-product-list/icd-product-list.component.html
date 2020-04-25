@@ -21,25 +21,15 @@
         </div>
 
         <div class="col-md-10">
+            
+            <div class="products" *ngIf="FilteredProducts.length !== 0">
+                <app-icd-product-card *ngFor="let product of FilteredProducts" [Product]="product"></app-icd-product-card>
+            </div>
 
-            <table class="table table-striped" *ngIf="FilteredProducts.length > 0">
-                <thead>
-                    <tr>
-                        <th>Prix</th>
-                        <th>Couleur</th>
-                        <th>Nom du produit</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let product of FilteredProducts">
-                        <td>{{ product.price }}</td>
-                        <td>{{ product.color }}</td>
-                        <td>{{ product.title }}</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p *ngIf="FilteredProducts.length === 0">Aucun produit de disponible</p>
+            <div *ngIf="FilteredProducts.length === 0">
+                <p>Aucun produit de disponible</p>
+            </div>
+
         </div>
     </div>
-
 </div>

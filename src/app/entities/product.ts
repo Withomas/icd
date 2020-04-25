@@ -1,13 +1,15 @@
 export class Product {
   price: number;
-  color: string;
+  colors: string[];
   title: string;
   categoryId: number;
+  dimensions: string[];
 
-  constructor(price: number, color: string, title: string, categoryId: number) {
+  constructor(price: number, colors: string[], title: string, categoryId: number, dimensions: string[]) {
     this.price = price;
-    this.color = color;
+    this.colors = this.colors;
     this.title = title;
     this.categoryId = categoryId;
+    this.dimensions = dimensions;
   }
 }

@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IcdProductListComponent } from './icd-product-list/icd-product-list.component';
+import { IcdProductCardComponent } from './icd-product-card/icd-product-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IcdProductListComponent
+    IcdProductListComponent,
+    IcdProductCardComponent
   ],
   imports: [
     BrowserModule,
