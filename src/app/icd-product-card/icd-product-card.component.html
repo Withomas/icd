@@ -1,8 +1,12 @@
 <div class="card">
-  <img class="card-img-top" src="..." alt="Card image cap">
+  <img class="card-img-top" src="./pictures/{{Product.pictureName}}" >
   <div class="card-body">
     <h5 class="card-title">{{Product.title}}</h5>
-    <p class="card-text">{{Product.price}}, {{Product.dimensions}}, {{Product.colors}}</p>
-    <a href="#" class="btn btn-primary">Add to list</a>
+    <p class="card-price">{{Product.price}}€</p>
+    <p class="card-text">Dimensions: {{Product.dimensions}}</p>
+    <p class="card-text" >Couleurs:</p>
+    <span *ngFor='let color of colors' [ngStyle]='dot.background-color = color'></span>
+   
+
   </div>
 </div>
