@@ -20,10 +20,9 @@
         </div>
 
         <div class="col-md-10">
-
+            
             <div class="products" *ngIf="FilteredProducts.length !== 0">
-                <app-icd-product-card *ngFor="let product of FilteredProducts" [Product]="product">
-                </app-icd-product-card>
+                <app-icd-product-card *ngFor="let product of FilteredProducts" [Product]="product"></app-icd-product-card>
             </div>
 
             <div *ngIf="FilteredProducts.length === 0">
