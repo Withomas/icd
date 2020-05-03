@@ -1,12 +1,26 @@
 <div class="card">
-  <img class="card-img-top" src="./pictures/{{Product.pictureName}}" >
+  <img class="card-img-top" src="./pictures/{{Product.pictureName}}">
   <div class="card-body">
-    <h5 class="card-title">{{Product.title}}</h5>
-    <p class="card-price">{{Product.price}}€</p>
-    <p class="card-text">Dimensions: {{Product.dimensions}}</p>
-    <p class="card-text" >Couleurs:</p>
-    <span *ngFor='let color of colors' [ngStyle]='dot.background-color = color'></span>
-   
+    <h2 class="card-title spacer">{{Product.title}}</h2>
+
+    <h3 class="card-text">Prix:</h3>
+    <span class="card-price">{{Product.price | currency :'EUR':'symbol':'.0'}}</span>
+
+    <h3 class="card-text">Couleurs:</h3>
+    <div class="colors" *ngIf="Product.colors.length > 0">
+      <span class="dot" *ngFor="let color of Product.colors" [style.background-color]="color"></span>
+    </div>
+    <div *ngIf="Product.colors.length == 0">
+      <p class="unavailable">Aucune couleur n'est disponible</p>
+    </div>
+
+    <h3 class="card-text">Dimensions:</h3>
+    <div class="dimensions" *ngIf="Product.dimensions.length > 0">
+        <span *ngFor="let dimension of Product.dimensions">{{dimension}}</span>
+    </div>
+    <div *ngIf="Product.dimensions.length == 0">
+      <p class="unavailable">Aucune dimension n'est disponible</p>
+    </div>
 
   </div>
 </div>
