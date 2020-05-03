@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IcdProductListComponent } from './icd-product-list/icd-product-list.component';
 import { IcdProductCardComponent } from './icd-product-card/icd-product-card.component';
+import { IcdHeaderComponent } from './icd-header/icd-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IcdProductListComponent,
-    IcdProductCardComponent
+    IcdProductCardComponent,
+    IcdHeaderComponent,
   ],
   imports: [
     BrowserModule,
