@@ -1,0 +1,53 @@
+h5, h4, h3, h2, p {
+  margin: 0px;
+}
+
+.card {
+  width: 270px;
+  height: 350px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 150px;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card-price {
+  color: #44bd32;
+  font-size: 1.1em;
+}
+
+.card-text {
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+.spacer {
+  margin-bottom: 15px;
+}
+
+.colors, .dimensions {
+  display: grid;
+  grid-template-columns: repeat(6, max-content);
+  grid-auto-flow: column;
+  column-gap: 1em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.dot {
+  height: 13px;
+  width: 13px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.unavailable {
+  font-size: 0.85em;
+}
