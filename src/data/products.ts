@@ -13,6 +13,5 @@ export const ProductsData: Product[] = [
     new Product(45000, ['#2d3436', '#d63031'], 'Red Epic-W', 10, [], 'red.png'),
     new Product(4500, ['#273c75', '#95a5a6'], 'Rolex Submariner', 11, ['40mm'], 'rolex.png'),
     new Product(120, ['#2d3436', '#d63031'], 'Nike tn', 10, ['35', '38', '40', '46'], 'tn.jpg'),
-    new Product(1800, ['#2d3436'], 'MSI Aegis ti3', 6, [], 'tourpc.jpg'),
-
+    new Product(1800, ['#2d3436'], 'MSI Aegis ti3', 6, [], 'tourpc.jpg')
 ];
