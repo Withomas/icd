@@ -1,6 +1,4 @@
 import { Product } from 'src/app/entities/product';
-import { getQueryPredicate } from '@angular/compiler/src/render3/view/util';
-import { getCurrencySymbol } from '@angular/common';
 
 export const ProductsData: Product[] = [
     new Product(1159, ['#57606f', '#d1ccc0', '#218c74', '#ffda79'], 'IPhone 11 pro', 2, ['6,1"'], '11pro.png'),
