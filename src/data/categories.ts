@@ -24,14 +24,14 @@ export const CategoriesData: Category[] = [
       12,
       'Photographie',
       [
-        new Category(10, 'Caméra', null),
-        new Category(11, 'Appareil-Photo', null)
+        new Category(13, 'Caméra', null),
+        new Category(14, 'Appareil-Photo', null)
       ]),
       new Category(
-        12,
+        15,
         'Audio',
         [
-          new Category(13, 'Casques Audio', null),
-          new Category(14, 'Haut-parleur', null)
+          new Category(16, 'Casques Audio', null),
+          new Category(17, 'Haut-parleur', null)
         ]),
 ];
